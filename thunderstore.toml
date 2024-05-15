@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "SGG_Modding"
 name = "ReLoad"
-versionNumber = "1.0.0"
+versionNumber = "1.0.1"
 description = "Provides helpers for managing hot reloading and waiting for the right time to load"
 websiteUrl = "https://github.com/SGG-Modding/ReLoad"
 containsNsfwContent = false
