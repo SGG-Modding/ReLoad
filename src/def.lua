@@ -80,7 +80,7 @@ function reload.queue.post_import_file(sig,script,on_post_import_file,on_ready,o
           Bound functions, in this case bound *to a file signature prefix*, so it can only be used multiple times per trigger, but a *file-locally unique* signature must be given to each.
 ]]
 ---@class SGG_Modding-ReLoad*binds.auto_multiple: table
----@field public load fun(on_ready: fun(),on_reload: fun()?)
+---@field public load fun(sig: any, on_ready: fun(),on_reload: fun()?)
 ---@field public queue SGG_Modding-ReLoad*binds.auto_multiple.queue
 
 ---@class SGG_Modding-ReLoad*binds.auto.queue: table
@@ -100,12 +100,12 @@ function reload.queue.post_import_file(sig,script,on_post_import_file,on_ready,o
 ---@field public post_import_file fun(script,on_post_import_file: SGG_Modding-ReLoad*on_post_import,on_ready: fun()?,on_reload: fun()?)
 
 ---@class SGG_Modding-ReLoad*binds.auto_multiple.queue: table
----@field public on_update fun(update: fun(),on_ready: fun()?,on_reload: fun()?)
----@field public on_pre_import fun(on_pre_import: SGG_Modding-ReLoad*on_pre_import,on_ready: fun()?,on_reload: fun()?)
----@field public post_import fun(on_post_import: SGG_Modding-ReLoad*on_post_import,on_ready: fun()?,on_reload: fun()?)
----@field public any_load fun(any_load: SGG_Modding-ReLoad*on_any_load,on_ready: fun()?,on_reload: fun()?)
----@field public pre_import_file fun(script,on_pre_import_file: SGG_Modding-ReLoad*on_pre_import,on_ready: fun()?,on_reload: fun()?)
----@field public post_import_file fun(script,on_post_import_file: SGG_Modding-ReLoad*on_post_import,on_ready: fun()?,on_reload: fun()?)
+---@field public on_update fun(sig: any, update: fun(),on_ready: fun()?,on_reload: fun()?)
+---@field public on_pre_import fun(sig: any, on_pre_import: SGG_Modding-ReLoad*on_pre_import,on_ready: fun()?,on_reload: fun()?)
+---@field public post_import fun(sig: any, on_post_import: SGG_Modding-ReLoad*on_post_import,on_ready: fun()?,on_reload: fun()?)
+---@field public any_load fun(sig: any, any_load: SGG_Modding-ReLoad*on_any_load,on_ready: fun()?,on_reload: fun()?)
+---@field public pre_import_file fun(sig: any, script,on_pre_import_file: SGG_Modding-ReLoad*on_pre_import,on_ready: fun()?,on_reload: fun()?)
+---@field public post_import_file fun(sig: any, script,on_post_import_file: SGG_Modding-ReLoad*on_post_import,on_ready: fun()?,on_reload: fun()?)
 
 ---@return SGG_Modding-ReLoad*binds.auto binds
 function reload.auto() end
