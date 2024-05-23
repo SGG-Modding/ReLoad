@@ -98,9 +98,14 @@ local function check_ready(trigger,...)
 end
 
 local function get_sig(level)
-	if level == nil then level = 1 end
-	local info = debug.getinfo(level + 1,'f')
-	local sig = tostring(info.func)
+	if level == nil then level = 0 end
+	level = level + 1
+	local env = envy.getfenv(level)
+	local info = debug.getinfo(level,'S')
+	local sig = info.source
+	if env._PLUGIN then
+		sig = env._PLUGIN.guid .. '|' .. sig
+	end
 	return sig
 end
 
