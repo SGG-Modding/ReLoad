@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-09-06
+
 ### Changed
 
 - Changed icon to a simpler one.
@@ -29,7 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial Thunderstore release.
 
-[unreleased]: https://github.com/SGG-Modding/ReLoad/compare/1.0.2...HEAD
+[unreleased]: https://github.com/SGG-Modding/ReLoad/compare/1.0.3...HEAD
+[1.0.3]: https://github.com/SGG-Modding/ReLoad/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/SGG-Modding/ReLoad/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/SGG-Modding/ReLoad/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/SGG-Modding/ReLoad/compare/eba0d7e21432247504fa77881d39032cb754ab26...1.0.0
